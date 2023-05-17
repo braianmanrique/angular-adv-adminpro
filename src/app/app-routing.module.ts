@@ -7,7 +7,10 @@ import { AuthRoutingModule } from './auth/auth-routing.module';
 
 const routes: Routes = [
   {path: '', redirectTo:'/dashboard', pathMatch: 'full'},
-
+  // {
+  //   path: 'login',
+  //   loadChildren: () => import('./auth/login')
+  // },
   {path: '**', component: NopagefoundComponent}
 ]
 
